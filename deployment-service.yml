@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: tetris
-        image: suneel09/kubernetes-project:latest
+        image: suneel09/dproject:mydockerimage
         ports:
         - containerPort: 3000   # Use port 3000
 
