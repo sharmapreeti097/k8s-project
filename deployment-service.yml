@@ -2,16 +2,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tetris
+  name: suneel
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: tetris
+      app: suneel
   template:
     metadata:
       labels:
-        app: tetris
+        app: suneel
     spec:
       containers:
       - name: tetris
@@ -23,7 +23,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: tetris-service
+  name: suneel-service
 spec:
   selector:
     app: tetris
