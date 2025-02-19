@@ -2,19 +2,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: suneel
+  name: tetris
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: suneel
+      app: tetris
   template:
     metadata:
       labels:
-        app: suneel
+        app: tetris
     spec:
       containers:
-      - name: suneel
+      - name: tetris
         image: suneel09/feb-docker:latest
         ports:
         - containerPort: 3000   # Use port 3000
@@ -23,7 +23,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: suneel-service
+  name: tetris-service
 spec:
   selector:
     app: tetris
