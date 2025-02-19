@@ -14,8 +14,8 @@ spec:
         app: suneel
     spec:
       containers:
-      - name: tetris
-        image: suneel09/dproject:mydockerimage
+      - name: suneel
+        image: suneel09/feb-docker:latest
         ports:
         - containerPort: 3000   # Use port 3000
 
