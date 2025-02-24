@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: suneel
-        image: suneel09/feb-docker:latest
+        image: suneel09/avengers:zomatoimage
         ports:
         - containerPort: 3000   # Use port 3000
 
